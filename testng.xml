@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Customer AccountTest Actions">
+<!--    <test name="Customer Login and Logout">-->
+<!--        <classes>-->
+<!--            <class name="AccountTest.LoginAndLogoutTest"/>-->
+<!--        </classes>-->
+<!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
+<!--    <test name="Customer AccountTest Creation">-->
+<!--        <classes>-->
+<!--            <class name="AccountTest.CreatingCustomerTest"/>-->
+<!--        </classes>-->
+<!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
+<!--    <test name="Adding Addresses">-->
+<!--        <classes>-->
+<!--            <class name="AccountTest.AddAddresses"/>-->
+<!--        </classes>-->
+<!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
+    <test name="AddToWishListTest">
+        <classes>
+            <class name="AccountTest.AddToWishListTest"/>
+        </classes>
+    </test> <!-- Test -->
+
+<!--    <test name="Delete Customer">-->
+<!--        <classes>-->
+<!--            <class name="AdminTest.CustomerDeleteTest"/>-->
+<!--        </classes>-->
+<!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
+
+
+</suite> <!-- Suite -->
