@@ -18,6 +18,7 @@ public class HomePage {
     By productLink = By.cssSelector("a.product-item-link");
 
 
+
     public HomePage(WebDriver driver){
         this.driver = driver;
     }
@@ -50,5 +51,14 @@ public class HomePage {
         ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", item);
         driver.findElement(productLink).click();
         return new ProductPage(driver);
+    }
+
+    public CategoryPage goToCategory() {
+        Actions action = new Actions(driver);
+        WebElement menuWomen = driver.findElement(By.id("ui-id-2"));
+        action.moveToElement(menuWomen).perform();
+        WebElement menuTop = driver.findElement(By.id("ui-id-8"));
+        menuTop.click();
+        return new CategoryPage(driver);
     }
 }
