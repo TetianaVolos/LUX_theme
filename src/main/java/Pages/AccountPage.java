@@ -19,11 +19,11 @@ public class AccountPage {
     }
 
 
-//    public AccountInformationPage clickMenuItem(){
-//        clickLink("Account Information");
-//        return new AccountInformationPage(driver);
-//    }
-//
+    public AccountInformationPage clickAccountInformation(){
+        clickLink("Account Information");
+        return new AccountInformationPage(driver);
+    }
+
     public WishListPage clickWishList(){
         clickLink("My Wish List");
         return new WishListPage(driver);

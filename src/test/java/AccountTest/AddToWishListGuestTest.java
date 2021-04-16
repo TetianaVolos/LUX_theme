@@ -25,6 +25,7 @@ public class AddToWishListGuestTest extends BaseTest {
         loginPage.setUsername("auto.test@luxinten.com");
         WishListPage wishListPage = loginPage.clickLoginAfterWishAdding();
         wishListPage.removeFromWish(itemName);
+        wishListPage.waitPageLoad();
         Boolean isPresent = driver.findElements(By.xpath("//a[@class=\"product-item-link\" and contains(text(),\"" + itemName +"\")]")).size() > 0;
         Assert.assertFalse(isPresent);
     }
