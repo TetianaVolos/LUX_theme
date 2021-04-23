@@ -12,7 +12,7 @@ public class LoginAndLogoutTest extends BaseTest {
         LoginPage loginPage = homePage.clickFormAuthentication();
         loginPage.setUsername("tetiana.kozibroda@luxinten.com");
         loginPage.setPassword("asdASD321321");
-        AccountPage accountPage = loginPage.clickLoginButton();
+        loginPage.clickLoginButton();
 
     }
     @Test(priority=2)
