@@ -22,7 +22,7 @@ public class BaseTestAdmin {
         driver.get("https://luxima.luxinten.com/admin");
         adminLoginPage = new AdminLoginPage(driver);
         adminLoginPage.setUsername("autotest");
-        adminLoginPage.setPassword("autotest123");
+        adminLoginPage.setPassword("lux123123");
         adminLoginPage.clickLoginButton();
         dashboardPage = new DashboardPage(driver);
 

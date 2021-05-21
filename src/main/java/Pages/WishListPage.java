@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class WishListPage {
+public class WishListPage extends Header {
     private WebDriver driver;
     By notice = By.xpath("//div[@role=\"alert\"]/child::div");
     By addToCart = By.cssSelector("button.action.tocart.primary");
@@ -18,8 +18,9 @@ public class WishListPage {
         remove.click();
     }
 
-    public void addToCart() {
+    public ProductPage addToCart() {
         driver.findElement(addToCart).click();
+        return new ProductPage(driver);
     }
 
     public void addAllToCart() {
@@ -30,5 +31,6 @@ public class WishListPage {
         new WebDriverWait(driver, 1000).until(ExpectedConditions
                 .presenceOfElementLocated(notice));
     }
+
 
 }

@@ -6,19 +6,29 @@
 <!--            <class name="AccountTest.LoginAndLogoutTest"/>-->
 <!--        </classes>-->
 <!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
-<!--    <test name="Customer AccountTest Creation">-->
-<!--        <classes>-->
-<!--            <class name="AccountTest.CreatingCustomerTest"/>-->
-<!--        </classes>-->
-<!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
-<!--    <test name="Adding Addresses">-->
-<!--        <classes>-->
-<!--            <class name="AccountTest.AddAddresses"/>-->
-<!--        </classes>-->
-<!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
+
+    <test name="Customer AccountTest Creation">
+        <classes>
+            <class name="AccountTest.CreatingCustomerTest"/>
+            <class name="AdminTest.CustomerDeleteTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite>
+
+
+<!--<test name="Adding Addresses">-->
+<!--<classes>-->
+<!--    <class name="AccountTest.AddAddresses"/>-->
+<!--</classes>-->
+<!--</test> &lt;!&ndash; Test &ndash;&gt;-->
 <!--    <test name="Account Information Page Test">-->
 <!--        <classes>-->
 <!--            <class name="AccountTest.AccountInformationPageTest"/>-->
+<!--        </classes>-->
+<!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
+<!--    <test name="AddToCartFromWishListTest">-->
+<!--        <classes>-->
+<!--            <class name="AccountTest.AddToCartFromWishListTest"/>-->
 <!--        </classes>-->
 <!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
 <!--    <test name="AddToWishListGuestTest">-->
@@ -31,11 +41,12 @@
 <!--            <class name="AccountTest.AddToWishListTest"/>-->
 <!--        </classes>-->
 <!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
-    <test name="Delete Customer">
-        <classes>
-            <class name="AdminTest.CustomerDeleteTest"/>
-        </classes>
-    </test> <!-- Test -->
+
+<!--    <test name="Delete Customer">-->
+<!--        <classes>-->
+<!--            <class name="AdminTest.CustomerDeleteTest"/>-->
+<!--        </classes>-->
+<!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
 
 
-</suite> <!-- Suite -->
+<!--</suite> &lt;!&ndash; Suite &ndash;&gt;-->
